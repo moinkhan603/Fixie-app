@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "798307336805",
+    "firebase_url": "https://fixapp-5e07e.firebaseio.com",
+    "project_id": "fixapp-5e07e",
+    "storage_bucket": "fixapp-5e07e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:798307336805:android:2321f7ef1b43a07e073c8c",
+        "android_client_info": {
+          "package_name": "com.example.fixx_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "798307336805-vgvrhjc88smps225ngc9ep2lig362iom.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEcSnbv2ZroTX7jK0AvoFx_Pn6oOIel2Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "798307336805-vgvrhjc88smps225ngc9ep2lig362iom.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
