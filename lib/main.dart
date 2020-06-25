@@ -8,6 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
 
@@ -35,80 +36,86 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff8b0000),
+      backgroundColor: Color(0xff3498DB),
       body: SafeArea(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Expanded(child: Column(
-                children: <Widget>[
-                  Image.asset('images/logo.png',
-                    width: 400.0,
-                    height: 350.0,
-                    fit: BoxFit.cover,
-                  ),
-                  Icon(
-                    Icons.games,
-                    size: 50.0,
-                    color: Colors.white70,
+            Expanded(
+              child: Center(
+                child: Column(
+                    children: <Widget>[
+                      SizedBox(height: 50,),
+                      Image.asset('images/logo.png',
+                        width:250.0,
+                        height: 250.0,
+                        fit: BoxFit.fill,
+                      ),
+                      SizedBox(height: 20,),
+                      Icon(
+                        Icons.games,
+                        size: 50.0,
+                        color: Colors.white70,
 
-                  ),
-                  SizedBox(
-                    height: 50.0,
+                      ),
+                      SizedBox(
+                        height: 50.0,
 
-                  ),
+                      ),
 
-                  Padding(
-                    padding: EdgeInsets.symmetric(vertical: 16.0),
-                    child: Material(
-                      elevation: 5.0,
-                      color: Colors.lightBlueAccent,
-                      borderRadius: BorderRadius.circular(30.0),
-                      child: MaterialButton(
-                        onPressed: () {
-                          //Go to login screen.
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => LoginScreen()),
-                          );
+                      Padding(
+                        padding: EdgeInsets.symmetric(vertical: 16.0),
+                        child: Material(
+                          elevation: 5.0,
+                          color: Colors.lightBlueAccent,
+                          borderRadius: BorderRadius.circular(30.0),
+                          child: MaterialButton(
+                            onPressed: () {
+                              //Go to login screen.
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => LoginScreen()),
+                              );
 
-                        },
-                        minWidth: 200.0,
-                        height: 42.0,
-                        child: Text(
-                          'Log In',
-                          style: TextStyle(fontSize: 20.0),
+                            },
+                            minWidth: 200.0,
+                            height: 42.0,
+                            child: Text(
+                              'Log In',
+                              style: TextStyle(fontSize: 20.0),
+                            ),
+                          ),
                         ),
                       ),
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.symmetric(vertical: 0.0),
-                    child: Material(
-                      elevation: 5.0,
-                      color: Colors.red,
-                      borderRadius: BorderRadius.circular(30.0),
-                      child: MaterialButton(
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => RegistrationScreen()),
-                          );
+                      Padding(
+                        padding: EdgeInsets.symmetric(vertical: 0.0),
+                        child: Material(
+                          elevation: 5.0,
+                          color: Colors.red,
+                          borderRadius: BorderRadius.circular(30.0),
+                          child: MaterialButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => RegistrationScreen()),
+                              );
 
-                          //Go to login screen.
+                              //Go to login screen.
 
-                        },
-                        minWidth: 200.0,
-                        height: 42.0,
-                        child: Text(
-                          'Register',
-                          style: TextStyle(fontSize: 20),
+                            },
+                            minWidth: 200.0,
+                            height: 42.0,
+                            child: Text(
+                              'Register',
+                              style: TextStyle(fontSize: 20),
+                            ),
+                          ),
                         ),
                       ),
-                    ),
-                  ),
-                ]
-            ),)
+                    ]
+                ),
+              ),
+            )
 
           ],),
 
